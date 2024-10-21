@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <input type="number" id="num1">
+    <button type="button" onclick="total()">Total</button>
+    <p id="result"></p>
+    <script>
+        function total(){
+            let total=0;
+            let num1 = parseInt(document.getElementById('num1').value);
+            while (num1!=-1){
+                total+=num1;
+                num1--;
+            }
+            document.getElementById('result').innerHTML='Result: '+total;
+        }
+    </script>  
+</body>
+</html>
